@@ -11,7 +11,7 @@ const PROJETOS = [
     tipo: 'Site + painel para barbearia',
     descricao: 'Site próprio da barbearia com agendamento e painel de gestão para o dono.',
     tags: ['Agendamento', 'Painel de gestão'],
-    status: 'Em desenvolvimento',
+    status: 'No ar',
     link: 'https://7edu-du-corte.vercel.app',
     imagem: '7edu.jpg',
     categoria: 'sites',
