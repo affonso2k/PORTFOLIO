@@ -7,16 +7,16 @@
 const PROJETOS = [
   {
     num: '01',
-    nome: 'Adocicada Confeitaria',
-    tipo: 'Loja online de bolos e doces',
-    descricao: 'Site de vendas da confeitaria com página de entrada em vitrine animada e loja completa.',
-    tags: ['Vitrine animada', 'Loja online', 'Feito para celular'],
-    status: 'No ar',
-    link: 'https://adocicadaconfeitaria.vercel.app',
-    imagem: 'adocicada.jpg',
+    nome: '7Edu du Corte',
+    tipo: 'Site + painel para barbearia',
+    descricao: 'Site próprio da barbearia com agendamento e painel de gestão para o dono.',
+    tags: ['Agendamento', 'Painel de gestão'],
+    status: 'Em desenvolvimento',
+    link: 'https://7edu-du-corte.vercel.app',
+    imagem: '7edu.jpg',
     categoria: 'sites',
-    capa: { icone: 'cake', arte: 'loja', rotulo: 'Confeitaria' },
-    alt: 'Tela inicial do site da Adocicada Confeitaria'
+    capa: { icone: 'scissors', arte: 'agenda', rotulo: 'Barbearia' },
+    alt: 'Tela inicial do site da barbearia 7Edu du Corte'
   },
   {
     num: '02',
@@ -59,16 +59,16 @@ const PROJETOS = [
   },
   {
     num: '05',
-    nome: '7Edu du Corte',
-    tipo: 'Site + painel para barbearia',
-    descricao: 'Site próprio da barbearia com agendamento e painel de gestão para o dono.',
-    tags: ['Agendamento', 'Painel de gestão'],
-    status: 'Em desenvolvimento',
-    link: '',
-    imagem: '7edu.jpg',
+    nome: 'Adocicada Confeitaria',
+    tipo: 'Loja online de bolos e doces',
+    descricao: 'Site de vendas da confeitaria com página de entrada em vitrine animada e loja completa.',
+    tags: ['Vitrine animada', 'Loja online', 'Feito para celular'],
+    status: 'No ar',
+    link: 'https://adocicadaconfeitaria.vercel.app',
+    imagem: 'adocicada.jpg',
     categoria: 'sites',
-    capa: { icone: 'scissors', arte: 'agenda', rotulo: 'Barbearia' },
-    alt: 'Tela inicial do site da barbearia 7Edu du Corte'
+    capa: { icone: 'cake', arte: 'loja', rotulo: 'Confeitaria' },
+    alt: 'Tela inicial do site da Adocicada Confeitaria'
   },
   {
     num: '06',
