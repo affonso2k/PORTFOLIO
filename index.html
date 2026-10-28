@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afonso.dev — Web Designer em Sobral-CE</title>
+  <meta name="description" content="Portfólio de Afonso: sites, cardápios digitais e automações para negócios locais em Sobral-CE e todo o Brasil.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Prévia de compartilhamento (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Afonso.dev">
+  <meta property="og:title" content="Afonso.dev — Web Designer em Sobral-CE">
+  <meta property="og:description" content="Sites, cardápios digitais e automações para negócios locais em Sobral-CE e todo o Brasil.">
+  <meta property="og:image" content="assets/og-afonso.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Afonso de terno preto em frente a um fundo vermelho escuro">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/afonso.webp">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Esconde os elementos da abertura só quando as animações vão rodar
+    (function () {
+      var reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduz) return;
+      document.documentElement.classList.add('js-anim');
+      setTimeout(function () {
+        if (!window.__animOk) document.documentElement.classList.remove('js-anim');
+      }, 3500);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- 4.1 TOPO -->
+  <header class="topbar container">
+    <div class="topbar-role">
+      <span class="red">Web designer</span>
+      <span>Desenvolvedor digital</span>
+    </div>
+    <div class="topbar-status">
+      <span>Disponível para novos projetos</span>
+      <span class="star" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- 4.2 ABERTURA -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-word-wrap" aria-hidden="true">
+        <div class="hero-word" id="heroWord">PORTFÓLIO</div>
+      </div>
+
+      <div class="hero-photo" data-intro>
+        <img src="assets/afonso.webp" width="900" height="1350"
+             alt="Afonso, de terno e camisa pretos, com as mãos nos bolsos"
+             fetchpriority="high">
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-left">
+          <p class="hello" data-intro>Olá, eu sou</p>
+          <h1 class="hero-name" data-intro>
+            <span>Afonso</span>
+            <span class="red">.dev</span>
+          </h1>
+          <p class="hero-role" data-intro>Web designer &amp;<br>desenvolvedor</p>
+          <p class="hero-text" data-intro>Crio sites, cardápios digitais e sistemas sob medida para negócios locais — cada um com identidade própria, pensado para vender e fácil de usar no celular.</p>
+          <p class="hero-place label" data-intro>
+            <i data-lucide="globe" aria-hidden="true"></i>
+            Sobral – CE · Atendo todo o Brasil
+          </p>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-badge" data-intro>
+            <span class="circle"><span class="star" aria-hidden="true"></span></span>
+            <p>Transformo ideias em experiências digitais que vendem.</p>
+          </div>
+
+          <ul class="stats" aria-label="Números">
+            <li data-intro><strong class="stat-num red" data-count="7">7</strong><span>Projetos<br>criados</span></li>
+            <li data-intro><strong class="stat-num red" data-count="5">5</strong><span>Negócios<br>atendidos</span></li>
+            <li data-intro><strong class="stat-num red" data-count="2">2</strong><span>Sites<br>no ar</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.3 PROJETOS -->
+    <section class="projects container" id="projetos" aria-labelledby="tituloProjetos">
+      <div class="section-head" data-reveal>
+        <h2 id="tituloProjetos" class="section-title">Projetos selecionados</h2>
+        <span class="head-line" aria-hidden="true"></span>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+          <span aria-hidden="true">·</span>
+          <button class="filter" data-filter="sites" aria-pressed="false">Sites &amp; cardápios</button>
+          <span aria-hidden="true">·</span>
+          <button class="filter" data-filter="automacao" aria-pressed="false">Automação &amp; IA</button>
+        </div>
+      </div>
+
+      <div class="grid" id="gradeProjetos"></div>
+    </section>
+
+    <!-- 4.4 LINHA DO MEIO -->
+    <section class="middle container" aria-label="Serviços, processo e citação">
+      <div class="mid-col" data-reveal>
+        <h2 class="section-title">O que eu faço &amp; ferramentas</h2>
+
+        <h3 class="sub red">Serviços</h3>
+        <ul class="services">
+          <li>Cardápios digitais com pedido no WhatsApp</li>
+          <li>Sites com identidade própria para negócios locais</li>
+          <li>Painel de pedidos e relatórios para o dono</li>
+          <li>Automações com Inteligência Artificial</li>
+        </ul>
+
+        <h3 class="sub red">Ferramentas</h3>
+        <ul class="chips">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>GSAP</li>
+          <li>Design de interfaces</li>
+          <li>Vercel</li>
+          <li>GitHub</li>
+          <li>n8n</li>
+          <li>Make</li>
+          <li>Inteligência Artificial</li>
+          <li>Integração com WhatsApp</li>
+        </ul>
+      </div>
+
+      <div class="mid-col" data-reveal>
+        <h2 class="section-title">Como eu trabalho</h2>
+        <ol class="process">
+          <li>
+            <span class="p-num">01</span>
+            <span class="p-icon"><i data-lucide="search" aria-hidden="true"></i></span>
+            <div><h3>Entender</h3><p>Conheço o seu negócio, o público e o que você precisa vender.</p></div>
+          </li>
+          <li>
+            <span class="p-num">02</span>
+            <span class="p-icon"><i data-lucide="lightbulb" aria-hidden="true"></i></span>
+            <div><h3>Idealizar</h3><p>Defino identidade, cores e a estrutura das páginas.</p></div>
+          </li>
+          <li>
+            <span class="p-num">03</span>
+            <span class="p-icon"><i data-lucide="pen-tool" aria-hidden="true"></i></span>
+            <div><h3>Design</h3><p>Crio um visual único, pensado primeiro para o celular.</p></div>
+          </li>
+          <li>
+            <span class="p-num">04</span>
+            <span class="p-icon"><i data-lucide="code" aria-hidden="true"></i></span>
+            <div><h3>Desenvolver</h3><p>Construo um site rápido, responsivo e fácil de atualizar.</p></div>
+          </li>
+          <li>
+            <span class="p-num">05</span>
+            <span class="p-icon"><i data-lucide="send" aria-hidden="true"></i></span>
+            <div><h3>Entregar</h3><p>Testo, publico e acompanho o site no ar.</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <figure class="quote" data-reveal>
+        <span class="quote-mark" aria-hidden="true">❝</span>
+        <blockquote>Site bonito chama atenção. Site bem feito vende todo dia.</blockquote>
+        <figcaption class="signature">Afonso</figcaption>
+        <p class="quote-cta label">Vamos criar algo<br>incrível juntos.</p>
+        <span class="star" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <!-- 4.5 CONTATO -->
+    <section class="contact container" id="contato" aria-labelledby="tituloContato">
+      <div class="contact-left" data-reveal>
+        <h2 id="tituloContato" class="contact-title">Vamos trabalhar<br>juntos <span class="star" aria-hidden="true"></span></h2>
+        <p>Estou aberto a novos projetos. Bora tirar a sua ideia do papel e colocar o seu negócio no digital?</p>
+        <a class="cta" href="https://wa.me/5588988757795?text=Ol%C3%A1%20Afonso!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20site." target="_blank" rel="noopener">
+          <span class="circle"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+          <span class="label red">Chamar no WhatsApp</span>
+        </a>
+      </div>
+
+      <ul class="contact-list" data-reveal>
+        <li>
+          <a href="https://wa.me/5588988757795?text=Ol%C3%A1%20Afonso!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20site." target="_blank" rel="noopener">
+            <span class="circle"><i data-lucide="message-circle" aria-hidden="true"></i></span>
+            <span><small>WhatsApp</small>(88) 98875-7795</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/affonso.dev/" target="_blank" rel="noopener">
+            <span class="circle"><i data-lucide="instagram" aria-hidden="true"></i></span>
+            <span><small>Instagram</small>@affonso.dev</span>
+          </a>
+        </li>
+        <li>
+          <div>
+            <span class="circle"><i data-lucide="map-pin" aria-hidden="true"></i></span>
+            <span><small>Localização</small>Sobral – Ceará, Brasil</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="desk" data-reveal aria-hidden="true">
+        <div class="mug"><span>A</span></div>
+        <div class="laptop">
+          <div class="laptop-lid">
+            <div class="laptop-screen" id="telaNotebook"></div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Afonso.dev — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- 4.6 BOTÃO FLUTUANTE -->
+  <a class="wa-float" href="https://wa.me/5588988757795?text=Ol%C3%A1%20Afonso!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20site." target="_blank" rel="noopener" aria-label="Conversar com Afonso no WhatsApp">
+    <i data-lucide="message-circle" aria-hidden="true"></i>
+  </a>
+
+  <!-- JANELA DE AMPLIAÇÃO -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitulo" hidden>
+    <div class="lb-panel">
+      <button class="lb-close circle" id="lbFechar" aria-label="Fechar janela"><i data-lucide="x" aria-hidden="true"></i></button>
+      <div class="lb-media" id="lbMidia"></div>
+      <div class="lb-info">
+        <span class="lb-num red" id="lbNum"></span>
+        <div>
+          <h3 id="lbTitulo"></h3>
+          <p class="lb-type" id="lbTipo"></p>
+          <p class="lb-desc" id="lbDesc"></p>
+          <ul class="chips" id="lbTags"></ul>
+          <a class="btn" id="lbLink" target="_blank" rel="noopener">Ver site ao vivo <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
